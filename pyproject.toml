@@ -1,0 +1,10 @@
+tool = { rye = { dev-dependencies = [
+    "jupyterlab>=4.2.3",
+] } }
+[project]
+name = "string-art"
+version = "0.1.0"
+dependencies = [
+    "python-joy @ git+https://github.com/anandology/joy",
+    "numpy>=2.0.0",
+]
