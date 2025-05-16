@@ -58,11 +58,34 @@ class StringArt:
         r = 120
         self.points = list(zip(r*np.cos(t), r*np.sin(t)))
 
-        if n <= 36:
+        num_labels = self._find_num_labels(n)
+        if not num_labels:
+            self.labels = []
+        else:
+            step = n // num_labels
             r1 = r + 10
-            labels = [str(i) for i in range(n)]
-            self.labels = list(zip(r1*np.cos(t), r1* np.sin(t), labels, np.linspace(360, 0, n, endpoint=False)))
+            labels = [str(i) for i in range(0, n, step)]
+            tt = t[::step]
+            self.labels = list(zip(r1*np.cos(tt), r1* np.sin(tt), labels, np.linspace(360, 0, num_labels, endpoint=False)))
+
         return self
+
+    def _find_num_labels(self, n):
+        if n <= 30:
+            return n
+        elif n%2 == 0 and n <= 40:
+            return n//2
+        elif n%3 == 0 and n <= 60:
+            return n//3
+        elif n%4 == 0 and n <= 80:
+            return n//4
+        elif n%5 == 0 and n <= 100:
+            return n//5
+        else:
+            # no labels
+            return 0
+
+
 
     def connect(self, a, b):
         n = len(self.points)
