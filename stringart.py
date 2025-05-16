@@ -54,7 +54,7 @@ class StringArt:
         if n <= 36:
             r1 = r + 10
             labels = [str(i) for i in range(n)]
-            self.labels = list(zip(r1*np.cos(t), r1* np.sin(t), labels, np.linspace(360, 0, n)))
+            self.labels = list(zip(r1*np.cos(t), r1* np.sin(t), labels, np.linspace(360, 0, n, endpoint=False)))
         return self
 
     def connect(self, a, b):
