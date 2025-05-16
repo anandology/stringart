@@ -11,25 +11,32 @@ class StringArt:
 
     def __init__(self):
         self.reset()
+        self.line_color = self.LINE_COLOR
+        self.stroke_width = 0.5
 
     def reset(self):
         self.points = []
         self.lines = []
         self.labels = []
 
+    def set_color(self, color):
+        self.line_color = color
+
     def draw(self):
         points = [self._draw_point(x, y) for x, y in self.points]
-        lines = [self._draw_line(p1, p2) for p1, p2 in self.lines]
+        lines = [self._draw_line(p1, p2, color) for p1, p2, color in self.lines]
         labels = [self._draw_label(x, y, text, angle) for x, y, text, angle in self.labels]
         return Group(points+lines+labels)
 
     def _draw_point(self, x, y):
         return circle(x=x, y=y, r=1, fill=self.POINT_COLOR)
 
-    def _draw_line(self, p1, p2):
+    def _draw_line(self, p1, p2, color):
         x1, y1 = p1
         x2, y2 = p2
-        return line(x1=x1, y1=y1, x2=x2, y2=y2, stroke_width=0.5, stroke=self.LINE_COLOR)
+        return line(x1=x1, y1=y1, x2=x2, y2=y2,
+                    stroke_width=self.stroke_width,
+                    stroke=color)
 
     def _draw_label(self, x, y, label, angle):
         return self._text(0, 0, label) | scale(x=1, y=-1) | rotate(angle) | translate(x=x, y=y)
@@ -63,7 +70,7 @@ class StringArt:
         b = b % n
         p1 = self.points[a]
         p2 = self.points[b]
-        self.lines.append((p1, p2))
+        self.lines.append((p1, p2, self.line_color))
         return self
 
     def _text(self, x, y, content):
@@ -98,6 +105,9 @@ def connect(a, b):
         connect(1, 5)
     """
     return _art.connect(a, b)
+
+def set_color(color):
+    return _art.set_color(color)
 
 def show(art=None):
     from IPython.display import display
