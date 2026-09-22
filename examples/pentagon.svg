@@ -1,0 +1,34 @@
+<svg width="300" height="300" viewBox="-150 -150 300 300" fill="none" stroke="black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="scale(1 -1)">
+  <g>
+    <circle cx="0" cy="0" r="148" fill="#f3ebdd" stroke="#d8cbb8" stroke-width="1" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#c9b79c" stroke-width="0.75" stroke-dasharray="2 3" />
+    <g stroke-width="1.1" stroke-linecap="round">
+      <line x1="7.34788079488412e-15" y1="120.0" x2="114.12678195541842" y2="37.08203932499369" stroke="#c2185b" />
+      <line x1="114.12678195541842" y1="37.08203932499369" x2="70.53423027509677" y2="-97.0820393249937" stroke="#c2185b" />
+      <line x1="70.53423027509677" y1="-97.0820393249937" x2="-70.53423027509676" y2="-97.0820393249937" stroke="#c2185b" />
+      <line x1="-70.53423027509676" y1="-97.0820393249937" x2="-114.12678195541844" y2="37.08203932499367" stroke="#c2185b" />
+      <line x1="-114.12678195541844" y1="37.08203932499367" x2="7.34788079488412e-15" y2="120.0" stroke="#c2185b" />
+    </g>
+    <g fill="#3e2f24" stroke="#fffaf2" stroke-width="1">
+      <circle cx="7.34788079488412e-15" cy="120.0" r="3.2" />
+      <circle cx="114.12678195541842" cy="37.08203932499369" r="2.4" />
+      <circle cx="70.53423027509677" cy="-97.0820393249937" r="2.4" />
+      <circle cx="-70.53423027509676" cy="-97.0820393249937" r="2.4" />
+      <circle cx="-114.12678195541844" cy="37.08203932499367" r="2.4" />
+    </g>
+    <g font-family="ui-monospace, &#x27;JetBrains Mono&#x27;, Menlo, Consolas, monospace" font-size="9" fill="#9a8a78" stroke="none" text-anchor="middle">
+      <text x="0" y="0" font-weight="700" dominant-baseline="central" transform="translate(8.082668874372531e-15 132.0) scale(1 -1)">
+0      </text>
+      <text x="0" y="0" dominant-baseline="central" transform="translate(125.53946015096027 40.79024325749305) scale(1 -1)">
+1      </text>
+      <text x="0" y="0" dominant-baseline="central" transform="translate(77.58765330260645 -106.79024325749306) scale(1 -1)">
+2      </text>
+      <text x="0" y="0" dominant-baseline="central" transform="translate(-77.58765330260644 -106.79024325749306) scale(1 -1)">
+3      </text>
+      <text x="0" y="0" dominant-baseline="central" transform="translate(-125.53946015096028 40.79024325749304) scale(1 -1)">
+4      </text>
+    </g>
+  </g>
+</g>
+</svg>
