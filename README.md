@@ -1,8 +1,21 @@
 # String Art
 
-A Python library to explore string art.
+A tiny Python library for making string art, designed for teaching programming to beginners.
 
 <img src="https://raw.githubusercontent.com/anandology/stringart/main/examples/three-circles.svg" width="300" alt="String art with three layers of threads">
+
+
+## What is String Art
+
+String art is a craft of making patterns by connecting points with a thread, typically around a circle. Each thread is a straight line, yet together they form curves and intricate patterns.
+
+It grew out of *curve stitching*, a technique [Mary Everest Boole][1] developed in the late 1800s to help children explore geometry by sewing lines on cards.
+
+<img src="https://raw.githubusercontent.com/anandology/stringart/main/images/four-circles.png" width="300" alt="String art with four layers of threads">
+
+*Made by hand on a laser-cut card stock board.*
+
+[1]: https://en.wikipedia.org/wiki/Mary_Everest_Boole
 
 ## Install
 
