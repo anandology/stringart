@@ -57,8 +57,8 @@ Point numbers wrap around the circle. With `18` points, `connect(17, 20)` is the
 
 | | | |
 |---|---|---|
-| [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/pentagon.svg)](examples/pentagon.py) | [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/pentagonal-star.svg)](examples/pentagonal-star.py) | [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/radials.svg)](examples/radials.py) |
-| [pentagon.py](examples/pentagon.py) | [pentagonal-star.py](examples/pentagonal-star.py) | [radials.py](examples/radials.py) |
+| [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/mystic-rose.svg)](examples/mystic-rose.py) | [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/dewdrop.svg)](examples/dewdrop.py) | [![](https://raw.githubusercontent.com/anandology/stringart/main/examples/sunrise.svg)](examples/sunrise.py) |
+| [mystic-rose.py](examples/mystic-rose.py) | [dewdrop.py](examples/dewdrop.py) | [sunrise.py](examples/sunrise.py) |
 
 See the [examples](examples/) directory for the programs. To regenerate the svg files after changing them, run `make` in that directory.
 
