@@ -1,10 +1,30 @@
-tool = { rye = { dev-dependencies = [
-    "jupyterlab>=4.2.3",
-] } }
 [project]
-name = "string-art"
+name = "stringart"
 version = "0.1.0"
+description = "A Python library to explore string art"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Anand Chitipothu", email = "anandology@gmail.com" }]
+requires-python = ">=3.9"
 dependencies = [
-    "python-joy @ git+https://github.com/anandology/joy",
+    "python-joy>=0.4.1",
     "numpy>=2.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/anandology/stringart"
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+required-version = ">=0.12"
+
+[tool.hatch.build.targets.sdist]
+include = ["stringart.py", "README.md", "LICENSE"]
